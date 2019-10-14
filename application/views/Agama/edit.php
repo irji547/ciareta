@@ -1,7 +1,7 @@
 <?php echo form_open('Agama/update') ?>
 <table width="325" border="1">
   <tr>
-    <td>id1</td>
+    <td>id</td>
     <td><input type="text" velue="<?php echo $edit['id_agama']?>" name="id_agama" id="id_agama"></td>
   </tr>
   <tr>
