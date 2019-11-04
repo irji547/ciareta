@@ -43,7 +43,7 @@ class Jurusan extends CI_Controller {
 		$this->load->view('jurusan/edit', $data,FALSE);
 	}
 
-	public function update()
+	public function update() //menambah data
 	{
 		$kode=$this->input->post('kode_jurusan');
 		$nama=$this->input->post('nama_jurusan');
@@ -56,7 +56,7 @@ class Jurusan extends CI_Controller {
 		redirect('jurusan','refresh');
 	}
 
-	public function delete()
+	public function delete()  //hapus data
 	{
 		$id=$this->uri->segment(3);
 		$this->db->where('kode_jurusan', $id);
